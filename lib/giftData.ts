@@ -5,7 +5,7 @@ export interface GiftData {
   cardMessage: string;
   birthdayImage: string;
   birthdayTitle: string;
-  birthdayText: string;
+  birthdayText?: string;
   balloonImage: string;
   birthdayWishesTitle: string;
   birthdayWishesMessage: string;
@@ -42,7 +42,7 @@ const ahmedGift: GiftData = {
   cardMessage: "شوف المفاجآت الحلوة دي، معمولة مخصوص عشانك يا نبيل! ✨",
   birthdayImage: "/images/kid-placeholder.jpg",
   birthdayTitle: "إلى شخصي المفضل",
-  
+  birthdayText: "",
   balloonImage: "/images/cat.png",
   birthdayWishesTitle: "Happy 23th Birthday, Nabil! 🎂✨",
   birthdayWishesMessage:

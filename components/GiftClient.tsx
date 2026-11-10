@@ -273,7 +273,9 @@ export default function GiftClient({ data }: Props) {
             </div>
             <div className="story-text-container">
               <h2 className="handwritten story-title">{data.birthdayTitle}</h2>
-              <p className="handwritten story-paragraph">{data.birthdayText}</p>
+              {data.birthdayText && (
+                <p className="handwritten story-paragraph">{data.birthdayText}</p>
+              )}
             </div>
             <div className="card-footer mt-4">
               <button
